@@ -13,7 +13,7 @@ $pushID = 'U0ac46dd528b9af0c99a61650352de67f';
 $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient($access_token);
 $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $channelSecret]);
 
-$textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('TungGIGI');
+$textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('2');
 $response = $bot->pushMessage($pushID, $textMessageBuilder);
 
 echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
