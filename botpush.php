@@ -8,12 +8,12 @@ $access_token = 'cE9EyQTm2btWnk40ETQ0HxnUYa2VwDAG7iUYVjy4lwJVA/Qxn7aRuXh8eQ5UeYR
 
 $channelSecret = 'b47115d6374191e166c37263d8cd5e34';
 
-$pushID = 'U0ac46dd528b9af0c99a61650352de67f';
+$pushID = 'U09ca9891ce026843549a511cdf5dec89';
 
 $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient($access_token);
 $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $channelSecret]);
 
-$textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('Test System Alert');
+$textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('Test System Alert2');
 $response = $bot->pushMessage($pushID, $textMessageBuilder);
 
 echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
